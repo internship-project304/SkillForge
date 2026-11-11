@@ -1,0 +1,147 @@
+
+.footer {
+  width: 86%;
+  background: #312E81;
+  color: #FFFFFF;
+  padding: 40px 7% 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Footer Layout */
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.3fr;
+  gap: 60px;
+}
+
+/* Project Information */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-logo-icon {
+  width:23px;
+  height: 23px;
+  background: #F59E0B;
+  color: #312E81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-logo-text {
+  font-family: 'Manrope', sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-about h3 {
+  color: #F59E0B;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.footer-about p {
+  color: #D1D5DB;
+  font-size: 12px;
+  line-height: 1.9;
+  max-width: 320px;
+}
+
+/* Footer Columns */
+.footer-column h3 {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #F59E0B;
+  margin-top: 9px;
+  border-radius: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 13px;
+}
+
+.footer-column ul li a {
+  color: #D1D5DB;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #F59E0B;
+  padding-left: 5px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  max-width: 1000px;
+  margin: 25px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #D1D5DB;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Tablet Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 550px) {
+  .footer {
+    padding: 25px 7% 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer-about p {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+}

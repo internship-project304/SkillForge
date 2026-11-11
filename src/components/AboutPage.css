@@ -1,0 +1,480 @@
+
+/* ABOUT PAGE */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f8fafc;
+  color: #252b45;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.about-page img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Scroll Reveal Animation */
+
+.about-reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.about-reveal.about-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefit-card.about-reveal {
+  transition-delay: var(--delay, 0s);
+}
+
+/* Common Elements */
+
+.about-label {
+  display: inline-block;
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.about-page p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 12px;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 14px 17px;
+  background: #312e81;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #6366f1;
+  transform: translateY(-4px);
+}
+
+/* Hero Section */
+
+.about-hero {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+
+
+.about-hero-content p {
+  max-width: 540px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.about-hero-image {
+  position: relative;
+}
+
+.about-hero-image img {
+  height: 430px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(49, 46, 129, 0.13);
+  animation: aboutFloat 5s ease-in-out infinite;
+}
+
+.about-floating-card {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 17px 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.about-floating-card > span {
+  font-size: 14px;
+}
+
+.about-floating-card strong,
+.about-floating-card small {
+  display: block;
+}
+
+.about-floating-card strong {
+  color: #312e81;
+  font-size: 12px;
+}
+
+.about-floating-card small {
+  color: #64748b;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* Introduction Section */
+
+.about-intro {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.about-intro-image img {
+  height: 380px;
+  border-radius: 16px;
+  transition: transform 0.5s ease;
+}
+
+.about-intro-image:hover img {
+  transform: scale(1.04);
+}
+
+.about-intro-content h2,
+.about-section-heading h2,
+.about-learning-content h2 {
+  color: #312e81;
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.3;
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.about-intro-content h2 span,
+.about-learning-content h2 span {
+  color: #6366f1;
+
+}
+
+.about-intro-content p {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.about-text-link {
+  display: inline-block;
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.about-text-link:hover {
+  color: #312e81;
+}
+
+/* Mission and Vision */
+
+.about-mission {
+  background: #eef0ff;
+  padding: 45px 40px;
+}
+
+.about-section-heading {
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.about-section-heading p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 12px;
+  margin: auto;
+  justify-content: center;
+  text-align: left;
+}
+
+.mission-grid {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.mission-card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(49, 46, 129, 0.07);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(49, 46, 129, 0.13);
+}
+
+
+.mission-icon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  background: #eef0ff;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  color: #312e81;
+  font-size: 14px;
+  margin-bottom: 13px;
+  
+}
+
+.mission-card p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Benefits Section */
+
+.about-benefits {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.benefit-card {
+  background: white;
+  border: 1px solid #e8eaf5;
+  border-radius: 14px;
+  padding: 30px 20px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 12px 30px rgba(49, 46, 129, 0.1);
+}
+
+.benefit-icon {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eef0ff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+  color: #312e81;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.about-learning {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #312e81;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #6366f1;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(49, 46, 129, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .about-learning {
+    padding: 10px 15px;
+  }
+
+  .about-btn {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+}
+/* Floating Animation */
+
+@keyframes aboutFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+  .about-hero,
+  .about-intro,
+  .about-learning {
+    gap: 35px;
+  }
+
+  .about-hero-image img {
+    height: 350px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-floating-card {
+    left: -15px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .about-hero,
+  .about-intro,
+  .about-learning {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .about-hero {
+    gap: 25px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 39px;
+  }
+
+  .about-hero-image img {
+    height: 290px;
+  }
+
+  .about-floating-card {
+    left: 10px;
+    bottom: 15px;
+  }
+
+  .about-intro-image img {
+    height: 300px;
+  }
+
+  .about-mission {
+    padding: 35px 20px;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 18px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-benefits {
+    padding: 35px 20px;
+  }
+
+  .about-learning-images {
+    min-height: 310px;
+  }
+
+  .learning-img-one {
+    height: 240px;
+  }
+
+  .learning-img-two {
+    height: 190px;
+  }
+
+  .about-cta {
+    padding: 30px 20px;
+  }
+  .benefit-card h3 {
+  color: #312e81;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  font-size: 12px;
+  margin: 0;
+}
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-reveal,
+  .about-hero-image img,
+  .benefit-card,
+  .mission-card,
+  .about-btn,
+  .about-cta-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .about-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
