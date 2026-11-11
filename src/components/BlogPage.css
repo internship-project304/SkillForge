@@ -37,6 +37,40 @@
   margin-bottom: 15px;
 }
 
+.blog-category-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #6366f1;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-category-link:hover {
+  color: #312e81;
+  text-decoration: underline;
+}
+
+.blog-category-internal-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.blog-category-internal-links a {
+  color: #312e81;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-category-internal-links a:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
 /* Scroll Reveal */
 
 .blog-reveal {

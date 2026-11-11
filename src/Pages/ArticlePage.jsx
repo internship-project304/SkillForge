@@ -3,6 +3,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { articles } from "../data/articles";
+import useSEO from "../hooks/useSEO";
 import "./ArticlePage.css";
 
 function ArticlePage() {
@@ -12,6 +13,7 @@ function ArticlePage() {
     (item) => String(item.id) === String(id)
   );
 
+  // Show message if article does not exist
   if (!article) {
     return (
       <div className="article-not-found">
@@ -20,6 +22,12 @@ function ArticlePage() {
       </div>
     );
   }
+
+  // SEO title and description for the selected article
+  useSEO(
+    `${article.title} | SkillForge`,
+    article.description
+  );
 
   return (
     <main className="simple-article-page">
@@ -31,6 +39,7 @@ function ArticlePage() {
         </Link>
 
         <div className="simple-article-header">
+
           <span className="simple-article-category">
             {article.category}
           </span>
@@ -45,9 +54,11 @@ function ArticlePage() {
             <span>{article.date}</span>
             <span>{article.readTime}</span>
           </div>
+
         </div>
 
         <div className="simple-article-gallery">
+
           {article.images.map((img, index) => (
             <div className="simple-image-card" key={index}>
 
@@ -64,6 +75,7 @@ function ArticlePage() {
 
             </div>
           ))}
+
         </div>
 
       </div>

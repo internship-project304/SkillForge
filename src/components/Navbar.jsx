@@ -2,9 +2,14 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import "./Navbar.css";
 
 function Navbar() {
+   useSEO(
+    "SkillForge – Learning & Productivity Blog",
+    "Explore practical tips about productivity, time management, learning skills, and career development."
+  );
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

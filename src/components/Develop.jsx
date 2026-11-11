@@ -1,6 +1,7 @@
 
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import "./Develop.css";
 
 const careerStrategies = [
@@ -121,6 +122,10 @@ const articles = [
 ];
 
 function Develop() {
+   useSEO(
+    "SkillForge – Learning & Productivity Blog",
+    "Explore practical tips about productivity, time management, learning skills, and career development."
+  );
   useEffect(() => {
     const elements = document.querySelectorAll(".career-reveal");
 

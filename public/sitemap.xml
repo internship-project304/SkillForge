@@ -1,0 +1,74 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://skill-forge-project.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/contact</loc>
+  </url>
+
+  <!-- Category Pages -->
+  <url>
+    <loc>https://skill-forge-project.vercel.app/categories/productivity</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/categories/time-management</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/categories/learning-skills</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/categories/career-development</loc>
+  </url>
+
+  <!-- Article Pages -->
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/1</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/2</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/3</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/4</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/5</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/blog/6</loc>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://skill-forge-project.vercel.app/privacy-policy</loc>
+  </url>
+
+  <url>
+    <loc>https://skill-forge-project.vercel.app/terms-conditions</loc>
+  </url>
+
+</urlset>
