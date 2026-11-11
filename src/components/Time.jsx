@@ -261,37 +261,6 @@ function Time() {
         </div>
       </section>
 
-      {/* Sample Schedule */}
-      <section className="time-schedule">
-        <div className="time-heading time-reveal">
-          <span className="time-section-label">PLAN YOUR DAY</span>
-          <h2>A Sample Daily Schedule</h2>
-          <p>
-            Use this example as a starting point and adjust the timings
-            according to your own responsibilities.
-          </p>
-        </div>
-
-        <div className="time-schedule-list">
-          {schedule.map((item, index) => (
-            <div className="time-schedule-row time-reveal" key={item.time}>
-              <div className="time-schedule-number">
-                {String(index + 1).padStart(2, "0")}
-              </div>
-
-              <div className="time-schedule-time">{item.time}</div>
-
-              <div className="time-schedule-details">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-
-              <span className="time-schedule-type">{item.type}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Common Mistakes */}
       <section className="time-mistakes">
         <div className="time-mistakes-content time-reveal">
@@ -349,21 +318,7 @@ function Time() {
             </article>
           ))}
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="time-cta time-reveal">
-        <span>YOUR TIME. YOUR GOALS. YOUR SUCCESS.</span>
-        <h2>Start Managing Your Time Today!</h2>
-        <p>
-          Make a plan, take action, and turn your valuable time into
-          meaningful progress.
-        </p>
-        <Link to="/blog" className="time-cta-btn">
-          Explore More Learning
-        </Link>
-      </section>
-
+      </section>    
     </main>
   );
 }

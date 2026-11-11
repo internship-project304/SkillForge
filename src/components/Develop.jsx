@@ -190,20 +190,6 @@ function Develop() {
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="career-intro career-reveal">
-        <span className="career-label">YOUR PROFESSIONAL JOURNEY</span>
-        <h2>
-          Take Charge of Your <span>Career Growth</span>
-        </h2>
-        <p>
-          Career development is a continuous process of learning, improving,
-          and preparing for new opportunities. Whether you are a student,
-          beginner, or working professional, developing the right skills
-          can help you move toward your goals with confidence.
-        </p>
-      </section>
-
       {/* Strategies */}
       <section className="career-strategies section-space">
         <div className="career-section-heading career-reveal">
@@ -286,34 +272,7 @@ function Develop() {
         </div>
       </section>
 
-      {/* Career Tips */}
-      <section className="career-tips-section">
-        <div className="career-tips-content career-reveal">
-          <span className="career-label">SMALL ACTIONS, BIG RESULTS</span>
-          <h2>Practical Tips for Professional Success</h2>
-          <p>
-            Consistent effort can make a meaningful difference in your
-            professional journey. Start with simple actions and build
-            better habits over time.
-          </p>
-
-          <ul>
-            <li>Set weekly learning and career goals.</li>
-            <li>Update your CV and portfolio regularly.</li>
-            <li>Practice interviews and professional communication.</li>
-            <li>Ask for feedback and learn from your experiences.</li>
-            <li>Stay informed about changes in your industry.</li>
-          </ul>
-        </div>
-
-        <div className="career-tips-image career-reveal">
-          <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1000"
-            alt="Professional planning career goals"
-          />
-        </div>
-      </section>
-
+      
       {/* Related Articles */}
       <section className="career-articles section-space">
         <div className="career-section-heading career-reveal">

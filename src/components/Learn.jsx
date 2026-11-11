@@ -154,9 +154,7 @@ function Learn() {
           </p>
 
           <div className="learning-hero-buttons">
-            <a href="#methods" className="learning-primary-btn">
-              Explore Learning Methods
-            </a>
+            
             <Link to="/blog" className="learning-secondary-btn">
               Read Learning Articles
             </Link>
@@ -196,33 +194,6 @@ function Learn() {
           applying knowledge in everyday situations. The right learning
           strategies can make this journey easier and more effective.
         </p>
-      </section>
-
-      {/* Learning Methods */}
-      <section className="learning-methods" id="methods">
-        <div className="learning-section-heading learning-reveal">
-          <span className="learning-section-label">LEARN EFFECTIVELY</span>
-          <h2>Four Methods to Become a Better Learner</h2>
-          <p>
-            Build a strong learning routine by using methods that encourage
-            understanding, practice, and long-term memory.
-          </p>
-        </div>
-
-        <div className="learning-method-grid">
-          {learningMethods.map((method) => (
-            <article className="learning-method-card learning-reveal" key={method.number}>
-              <div className="learning-method-top">
-                <span>{method.icon}</span>
-                <strong>{method.number}</strong>
-              </div>
-
-              <h3>{method.title}</h3>
-              <p>{method.description}</p>
-              <div className="learning-method-line"></div>
-            </article>
-          ))}
-        </div>
       </section>
 
       {/* Learning Process */}
@@ -349,20 +320,7 @@ function Learn() {
             </article>
           ))}
         </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="learning-cta learning-reveal">
-        <span>INVEST IN YOUR KNOWLEDGE</span>
-        <h2>Start Your Learning Journey Today!</h2>
-        <p>
-          Every new skill creates a new opportunity. Keep exploring,
-          keep practicing, and keep growing.
-        </p>
-        <Link to="/blog" className="learning-cta-btn">
-          Explore More Articles
-        </Link>
-      </section>
+      </section>   
 
     </main>
   );
