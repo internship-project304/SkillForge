@@ -1,0 +1,158 @@
+
+
+.simple-article-page {
+  width: 95%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.simple-article-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.back-to-blog {
+  display: inline-block;
+  color: #312e81;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.back-to-blog:hover {
+  color: #6366f1;
+}
+
+.simple-article-header {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.simple-article-category {
+  display: inline-block;
+  padding: 8px 18px;
+  color: #312e81;
+  background: #e9eaff;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.simple-article-header h1 {
+  color: #312e81;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 20px 0 15px;
+}
+
+.simple-article-intro {
+  max-width: 750px;
+  margin: auto;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: auto;
+  text-align: center;
+  text-align: left;
+}
+
+.simple-article-meta {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  color: #777777;
+  font-size: 12px;
+}
+
+.simple-article-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.simple-image-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.simple-image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(49, 46, 129, 0.10);
+}
+
+.simple-image-card img {
+  width: 100%;
+  height: 280px;
+  display: block;
+  object-fit: cover;
+}
+
+.simple-image-info {
+  padding: 20px;
+}
+
+.simple-image-info h3 {
+  color: #312e81;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.simple-image-info p {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.article-not-found {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.article-not-found h2 {
+  color: #312e81;
+  font-size: 18px;
+}
+
+.article-not-found a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .simple-article-page {
+    padding: 35px 15px;
+  }
+
+  .simple-article-header h1 {
+    font-size: 18px;
+  }
+
+  .simple-article-intro {
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    text-align: left;
+  }
+
+  .simple-article-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .simple-image-card img {
+    height: 230px;
+  }
+
+  .simple-article-meta {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}

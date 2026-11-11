@@ -21,6 +21,7 @@ import CareerDevelopment from './Pages/Categories/CareerDevelopment'
 import Contact from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermsConditions from "./Pages/TermsConditions";
+import ArticlePage from "./Pages/ArticlePage";
 
 
 
@@ -46,6 +47,7 @@ function App() {
        
               <Route  path="/privacy-policy" element={<PrivacyPolicy />}/>
                <Route path="/terms-conditions" element={<TermsConditions />}/>
+               <Route path="/blog/:id" element={<ArticlePage />} />
       </Routes>
 
       <Footer />
