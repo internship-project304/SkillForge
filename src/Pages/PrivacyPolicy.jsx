@@ -2,9 +2,14 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import useSEO from "../hooks/useSEO";
 import "./Legal.css";
 
 function PrivacyPolicy() {
+  useSEO(
+    "SkillForge – Learning & Productivity Blog",
+    "Explore practical tips about productivity, time management, learning skills, and career development."
+  );
   return (
     <div className="legal-page">
       <h1>Privacy Policy</h1>
